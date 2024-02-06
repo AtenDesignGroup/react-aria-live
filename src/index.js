@@ -1,3 +1,4 @@
-export LiveAnnouncer from './modules/LiveAnnouncer';
-export LiveMessage from './modules/LiveMessage';
-export LiveMessenger from './modules/LiveMessenger';
+import LiveAnnouncer from './modules/LiveAnnouncer';
+import LiveMessage from './modules/LiveMessage';
+import LiveMessenger from './modules/LiveMessenger';
+export { LiveAnnouncer, LiveMessage, LiveMessenger };

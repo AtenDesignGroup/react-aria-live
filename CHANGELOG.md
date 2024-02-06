@@ -1,3 +1,6 @@
+## 2.0.6 (Feb 6, 2024)
+Updating application to support React 18 and Node 16.
+
 ## 2.0.5 (Apr 10, 2019)
 
 Add nowrap style to hidden regions to hotfix issue [https://github.com/nvaccess/nvda/issues/5448](https://github.com/nvaccess/nvda/issues/5448)

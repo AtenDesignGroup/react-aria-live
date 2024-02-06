@@ -1,7 +1,7 @@
 {
-  "name": "react-aria-live",
-  "version": "2.0.5",
-  "description": "Add aria-live messaging to your React app",
+  "name": "@aten-design-group/react-aria-live",
+  "version": "2.0.6",
+  "description": "Add aria-live messaging to your React app, upgraded to peer dep React 18",
   "main": "lib/index.js",
   "module": "es/index.js",
   "files": [
@@ -21,16 +21,15 @@
     "uuid": "^3.2.1"
   },
   "peerDependencies": {
-    "react": "^16.3.x"
+    "react": "^18.1.x"
   },
   "devDependencies": {
-    "babel-core": "6.26.0",
+    "@cfaester/enzyme-adapter-react-18": "^0.7.1",
+    "babel-core": "6.26.3",
     "babel-eslint": "7.2.3",
     "babel-jest": "20.0.3",
     "babel-preset-react-app": "^3.1.1",
     "enzyme": "^3.3.0",
-    "enzyme-adapter-react-16": "^1.10.0",
-    "enzyme-context-patch": "0.0.7",
     "enzyme-to-json": "3.3.0",
     "eslint": "4.10.0",
     "eslint-config-react-app": "2.1.0",
@@ -42,10 +41,10 @@
     "jest": "22.1.4",
     "nwb": "0.22.x",
     "prettier": "1.12.1",
-    "prop-types": "15.6.1",
-    "react": "16.4.0",
-    "react-dom": "16.4.0",
-    "react-test-renderer": "16.4.0"
+    "prop-types": "15.8.1",
+    "react": "^18.1.0",
+    "react-dom": "^18.1.0",
+    "react-test-renderer": "18.1.0"
   },
   "jest": {
     "collectCoverageFrom": [
@@ -83,7 +82,7 @@
   "author": "Almero Steyn",
   "homepage": "",
   "license": "MIT",
-  "repository": "https://github.com/AlmeroSteyn/react-aria-live",
+  "repository": "https://github.com/AtenDesignGroup/react-aria-live",
   "keywords": [
     "react-component"
   ],
