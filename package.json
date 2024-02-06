@@ -18,7 +18,7 @@
     "format": "prettier --write --single-quote --tab-width=2 --trailing-comma=es5 --jsx-bracket-same-line src/**/*.js"
   },
   "dependencies": {
-    "uuid": "^3.2.1"
+    "uuid": "^9.0.1"
   },
   "peerDependencies": {
     "react": "^18.1.x"

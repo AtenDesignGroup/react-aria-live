@@ -1,6 +1,6 @@
 import React, { Component, Fragment, StrictMode } from 'react';
 import { render } from 'react-dom';
-import uuidv4 from 'uuid/v4';
+import { v4 as uuidv4 } from 'uuid';
 
 import LiveAnnouncer from '../../src/modules/LiveAnnouncer';
 import LiveMessage from '../../src/modules/LiveMessage';
