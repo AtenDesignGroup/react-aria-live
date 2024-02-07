@@ -25,22 +25,22 @@
   },
   "devDependencies": {
     "@cfaester/enzyme-adapter-react-18": "^0.7.1",
-    "babel-core": "6.26.3",
-    "babel-eslint": "7.2.3",
-    "babel-jest": "20.0.3",
-    "babel-preset-react-app": "^3.1.1",
+    "babel-core": "^7.0.0-0",
+    "babel-jest": "^22.4.4",
+    "babel-preset-react-app": "^10.0.1",
     "enzyme": "^3.3.0",
     "enzyme-to-json": "3.3.0",
-    "eslint": "4.10.0",
-    "eslint-config-react-app": "2.1.0",
-    "eslint-loader": "1.9.0",
-    "eslint-plugin-flowtype": "2.39.1",
-    "eslint-plugin-import": "2.8.0",
-    "eslint-plugin-jsx-a11y": "5.1.1",
-    "eslint-plugin-react": "7.4.0",
-    "jest": "22.1.4",
-    "nwb": "0.22.x",
-    "prettier": "1.12.1",
+    "eslint": "7.30.0",
+    "eslint-config-react-app": "6.0.0",
+    "eslint-plugin-flowtype": "5.2.0",
+    "eslint-plugin-import": "2.23.4",
+    "eslint-plugin-jsx-a11y": "6.4.1",
+    "eslint-plugin-prettier": "3.4.0",
+    "eslint-plugin-react": "7.24.0",
+    "jest": "^24.0",
+    "jest-environment-jsdom": "^24",
+    "nwb": "0.25.2",
+    "prettier": "2.3.2",
     "prop-types": "15.8.1",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
@@ -53,13 +53,17 @@
     "setupFiles": [
       "<rootDir>/config/polyfills.js"
     ],
-    "setupTestFrameworkScriptFile": "<rootDir>/src/setupTests.js",
+    "setupFilesAfterEnv": [
+      "<rootDir>/src/setupTests.js"
+    ],
     "testMatch": [
       "<rootDir>/src/modules/**/__tests__/**/*.js?(x)",
       "<rootDir>/src/modules/**/?(*.)(spec|test).js?(x)"
     ],
     "testEnvironment": "node",
-    "testURL": "http://localhost",
+    "testEnvironmentOptions": {
+      "url": "http://localhost"
+    },
     "transform": {
       "^.+\\.(js|jsx)$": "<rootDir>/node_modules/babel-jest",
       "^.+\\.css$": "<rootDir>/config/jest/cssTransform.js",
@@ -86,11 +90,6 @@
   "keywords": [
     "react-component"
   ],
-  "babel": {
-    "presets": [
-      "react-app"
-    ]
-  },
   "eslintConfig": {
     "extends": "react-app"
   }
